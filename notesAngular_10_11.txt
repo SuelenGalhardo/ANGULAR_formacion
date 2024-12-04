@@ -1,0 +1,38 @@
+C:\Users\sranucci\AppData\Roaming\npm
+
+
+PS Env:\> $env:path
+C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\sranucci\AppData\Local\Microsoft\WindowsApps;C:\Users\sranucci\AppData\Local\Programs\Microsoft VS Code\bin
+PS Env:\>
+
+
+
+$env:path += ";C:\Users\sranucci\AppData\Roaming\npm"
+
+
+ng server --open
+
+ng new mi-primer-proyecto
+
+npm i -g @ionic/cli
+
+
+ ng generate application mi-primera-app --routing=true
+
+ng generate library mi-lib --prefix=ng-mi-lib
+
+dentro de un work space, cuando vayamos a crear algun modulo tenemos que espeficicar dentro de cual prouecto queremos 
+
+ng g module shared --routing=false --project=mi-primera-app
+
+
+ng g module demoq --routing=true --project=mi-primera-app  
+ng g component demo1/home --module=demo1 --project=mi-primera-app
+ng g pipe shared/ordenar --module=shared --project=mi-primera-app          
+CREATE projects/mi-primera-app/src/app/shared/ordenar.pipe.spec.ts (199 bytes)
+
+ng g component mi-component --project=mi-lib
+ng build mi-lib  para compilar 
+PS C:\Users\sranucci\OneDrive - Capgemini\Desktop\Angular\mi-workspace> cd "C:\Users\sranucci\OneDrive - Capgemini\Desktop\Angular\mi-workspace"
+>> npm install "C:\Users\sranucci\OneDrive - Capgemini\Desktop\Angular\mi-workspace\dist\mi-lib" --save
+>>
